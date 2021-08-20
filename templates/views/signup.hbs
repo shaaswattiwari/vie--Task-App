@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <div class="modal hidden">
+   <div id="loading-bar-spinner" class="spinner">
+     <div class="spinner-icon"></div></div>
+    </div>
+    <form
+      id="form"
+      method="post"
+      action="/signup"
+      enctype="multipart/form-data"
+    >
+
+      <label for="userpicture">
+        <img class="userImage" src="../images/user.png" alt="" srcset="" />
+      </label>
+      <input
+        type="file"
+        name="avatar"
+        id="userpicture"
+        accept="image/*"
+        capture="user"
+        required
+      />
+
+      <input required type="text" name="name" placeholder="Name" />
+
+      <input required type="email" name="email" placeholder="Email" />
+
+      <input type="number" name="age" min="18" placeholder="Age" required />
+
+      <input
+        required
+        type="password"
+        name="password"
+        placeholder="Password"
+        minlength="6"
+      />
+         <div class="link">
+    
+      <input type="submit" value="Submit" />
+ <h3>Already have an account!<br/>
+     <a href="/login"><span>LOG-IN</span></a>
+    </form></h3>
+    </form>
+    <script src="/js/signup.js">
+    </script>
+  </body>
+</html>

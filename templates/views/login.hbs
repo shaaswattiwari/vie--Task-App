@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-up</title>
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+      <div class="modal hidden">
+   <div id="loading-bar-spinner" class="spinner">
+     <div class="spinner-icon"></div></div>
+    </div>
+    <form id="form" method="post" action="/login" enctype="multipart/form-data">
+<h1>My-Manager</h1>
+      <input required type="email" name="email" placeholder="Email" />
+
+      <input
+        required
+        type="password"
+        name="password"
+        placeholder="Password"
+        minlength="6"
+      />
+     
+      <input type="submit" value="Submit" name="submit" />
+      
+     <div class="link">
+     <h3>Don't have an account yet?<br/>
+     <a href="/signup"><span>SIGN-UP</span></a>
+    </form></h3>
+</div>
+<script src="/js/login.js">
+    </script>
+  </body>
+</html>
